@@ -1,0 +1,149 @@
+1. import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt() 
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number."); } else {
+            System.out.println(number + " is an odd number."); }
+        scanner.close();} }
+2. import java.util.Scanner;
+public class Grade{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a grade (A, B, C, D, F): ");
+        char grade = scanner.next().charAt(0);
+        switch (grade) {
+            case 'A':
+                System.out.println("Excellent job!");
+                break;
+            case 'B':
+                System.out.println("Good job!");
+                break;
+            case 'C':
+                System.out.println("Fair effort.");
+                break;
+            case 'D':
+                System.out.println("You passed, but improvement is needed.");
+                break;
+            case 'F':
+                System.out.println("You failed. Better luck next time.");
+                break;
+            default:
+                System.out.println("Invalid grade entered."); }
+        scanner.close();  }}
+
+3.  import java.util.Scanner;
+public class LeapYear {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+ System.out.print("Enter a year: ");
+        int year = scanner.nextInt();
+if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year."); }
+scanner.close();}}
+
+4.  import java.util.Scanner;
+public class Number {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+System.out.print("Enter the third number: ");
+        int num3 = scanner.nextInt();
+ if (num1 > num2 && num1 > num3) {
+            System.out.println(num1 + " is the largest number.");
+        } else if (num2 > num1 && num2 > num3) {
+            System.out.println(num2 + " is the largest number.");
+        } else if (num3 > num1 && num3 > num2) {
+            System.out.println(num3 + " is the largest number.");
+        } else {
+            System.out.println("There is a tie between two or more numbers.");}
+scanner.close();}}
+
+5.  import java.util.Scanner;
+
+public class NumberC {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+ System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+ if (number > 0) {
+            System.out.println(number + " is a positive number.");
+        } else if (number < 0) {
+            System.out.println(number + " is a negative number.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+scanner.close(); }}
+
+6. public class Triangle {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " "); }
+            System.out.println();
+        }}}
+
+7.  import java.util.Scanner;
+public class Diamond {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+System.out.print("Enter the number of rows for the top half of the diamond: ");
+        int rows = scanner.nextInt();
+for (int i = 1; i <= rows; i++) {
+            for (int j = i; j < rows; j++) {
+                System.out.print(" ");}
+           for (int j = 1; j <= (2 * i - 1); j++) {
+                  System.out.print("*")}
+            System.out.println();}
+for (int i = rows - 1; i >= 1; i--) {
+           for (int j = rows; j > i; j--) {
+                System.out.print(" ");}
+           for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");}
+            System.out.println()
+  scanner.close() }}}
+
+
+8. public class Average {
+    public static void main(String[] args) {
+        int[] numbers = {10, 12, 34, 23, 56, 78};
+        int sum = 0;
+         for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];}
+        double average = (double) sum / numbers.length;
+          System.out.println("The average of the array elements is: " + average);}}
+
+9. public class Reverse {
+    public static void main(String[] args) {
+         int[] numbers = {3, 4, 6, 1, 9, 7, 5, 8};
+        int[] reversed = new int[numbers.length];
+ for (int i = 0; i < numbers.length; i++) {
+            reversed[i] = numbers[numbers.length - 1 - i]; }
+ System.out.print("Reversed array: ");
+        for (int num : reversed) {
+            System.out.print(num + " "); }}}
+
+10. public class Largest {
+    public static void main(String[] args) {
+        int[] numbers = {34, 23, 12, 45, 67, 89, 234, 26, 10, 30, 43};
+         int largest = numbers[0];
+ for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            } }
+   System.out.println("The largest element in the array is: " + largest); }}
+
+
+
+
+
+
+
+
